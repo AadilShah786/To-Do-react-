@@ -1,0 +1,5 @@
+.centre{
+    width:33%; /* Subtracting 5px padding from each side (left + right) */
+    height: 100%;
+    background-color: rgba(255, 247, 0,0.3);
+}
