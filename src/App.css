@@ -2,11 +2,10 @@
 .App {
   height: calc(100vh - 100px);
   width: calc(100vw-100px);
-  background-image: url('./assets/bgimage.jpeg'); /* Use the imported image */
-  /* Other background properties */
-  background-size: 100% auto; /* Adjust to your needs */
-  background-repeat: no-repeat;
+  /* background-image: url('./assets/bgimage.jpeg');
+  background-size: 100% auto; 
+  background-repeat: no-repeat; */
   display: flex;
   padding: 50px;
-  /* ... */
+  background-color: rgba(212, 211, 211,0.25);
 }

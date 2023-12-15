@@ -1,15 +1,21 @@
-import React from 'react';
+import React, {useState,useCallback} from 'react';
 import './App.css';
 import Left from './components/left';
 import Centre from './components/centre';
 import Right from './components/right';
-import bgimage from './assets/bgimage.jpeg';
 
 function App() {
+
+  const [reRender, setReRender] = useState(false);
+
+  const triggerReRender = useCallback(() => {
+    setReRender(prevState => !prevState); // Toggle state
+  }, []);
+
   return (
     <div className="App">
-      <Left/>
-      <Centre/>
+      <Left  onClick={triggerReRender}/>
+      <Centre reRender={reRender}/>
       <Right/>
     </div>
   );

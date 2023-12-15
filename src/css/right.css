@@ -1,5 +1,40 @@
 .right{
     width:33%; /* Subtracting 5px padding from each side (left + right) */
     height: 100%;
-    background-color: rgba(13, 255, 0,0.3);
+    display: flex;
+    flex-direction: column;
+     /* Center children vertically */
+    
+}
+
+.nav{
+    width: 90%;
+    overflow-x: scroll;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.scroll_date{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    height: 100px;
+}
+.nav::-webkit-scrollbar {
+    display: none;
+}
+.date{
+    height: 100px;
+   min-width:  80px;
+    border-radius: 20px;
+    background-color: rgba(165, 42, 42,0.3);
+}
+
+.time{
+    width: 400px;
+    margin-left:10%;
+    padding: 20px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: rgba(0, 255, 255,0.3);
 }
